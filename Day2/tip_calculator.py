@@ -12,5 +12,6 @@ people = int(input('Between how many people would you like to split the bill?\n'
 tip = int(input('How much of a tip would you like to give? [Popular tips = 10 / 12 / 15%]\n'))
 bill_with_tip = bill * (1 + tip / 100)
 result = bill_with_tip / people
-result_by_person = round(result, 2)
+# result_by_person = round(result, 2)
+result_by_person = "{:.2f}".format(result)
 print(f'Each person should pay: ${result_by_person}')
